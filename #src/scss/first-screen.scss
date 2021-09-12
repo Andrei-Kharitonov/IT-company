@@ -1,0 +1,36 @@
+.first-screen {
+  color: #fff;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  // .first-screen__container
+  &__container {
+    max-width: 830px;
+    text-align: center;
+    padding-bottom: 90px;
+    @media (max-height: 500px) {
+      padding-bottom: 0;
+    }
+  }
+  // .first-screen__subtitle
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  // .first-screen__title
+  &__title {
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    @media (max-width: $md3+px) {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+  // .first-screen__btn
+  &__btn {
+    display: inline-block;
+  }
+}
